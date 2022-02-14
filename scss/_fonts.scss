@@ -1,0 +1,32 @@
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.88rem;
+	margin-bottom: 3.333rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	line-height: 1.61rem;
+	margin-bottom: 1.66rem;
+	text-transform: uppercase;
+}
+
+p {
+	line-height: 1.44rem;
+
+	&:not(:last-child) {
+		margin-bottom: 0.83rem;
+	}
+}
+
+strong {
+	font-weight: 700;
+}

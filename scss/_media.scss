@@ -1,0 +1,165 @@
+@media screen and (max-width: 1250px) {
+	html {
+		font-size: 15px;
+	}
+
+	.header__bottom--active {
+		height: calc(100vh - 250px);
+	}
+
+	.submenu__text {
+		overflow-y: scroll;
+	}
+
+	.phone-wrap {
+		width: 440px;
+		height: 500px;
+		margin-right: 50px;
+	}
+
+	.phone-screen {
+		&__border {
+			height: 85%;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	html {
+		font-size: 12px;
+	}
+
+	header + section {
+		padding-top: 160px;
+	}
+
+	.portfolio-wrap {
+		flex-direction: column;
+	}
+
+	.phone-wrap {
+		margin-right: unset;
+	}
+
+	.logo {
+		max-width: 100px;
+	}
+
+	.submenu {
+		min-width: max-content;
+		padding-right: 3.333rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section {
+		padding: 2rem 0;
+	}
+
+	header + section {
+		padding-top: 120px;
+	}
+
+	.phone-screen__items img {
+		border-radius: 20px;
+	}
+
+	.menu {
+		&__items {
+			font-size: 12px;
+
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+
+		&__arrow {
+			margin-left: 5px;
+		}
+	}
+
+	.company__items {
+		max-width: 180px;
+	}
+
+	.portfolio {
+		margin-top: 30px;
+
+		.swiper-slide {
+			max-height: 200px;
+			overflow-x: scroll;
+		}
+
+		&-wrap {
+			padding: 0 20px 60px 20px;
+
+			.swiper-button-prev,
+			.swiper-button-next {
+				top: 53%;
+			}
+		}
+	}
+
+	.phone-wrap {
+		width: 100%;
+		max-width: 335px;
+		height: 300px;
+	}
+
+	.submenu {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__text {
+			margin-top: 20px;
+			margin-left: unset;
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.header__bottom {
+		flex-direction: column;
+
+		&--active {
+			padding: 10px;
+			height: calc(100vh - 180px);
+		}
+	}
+
+	.submenu {
+		flex-direction: row;
+		padding: 15px;
+		min-width: unset;
+		overflow-x: scroll;
+		border-right: unset;
+
+		&__items {
+			padding-left: unset;
+			min-width: max-content;
+
+			&::before {
+				content: none;
+			}
+
+			&--active::before {
+				content: none;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: unset;
+				margin-right: 15px;
+			}
+		}
+
+		&__content {
+			padding: 10px;
+			
+			&-wrap {
+				height: 100%;
+				overflow: hidden;
+			}
+		}
+	}
+}
