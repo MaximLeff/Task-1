@@ -579,6 +579,7 @@ section + section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  overflow-y: auto;
 }
 
 .submenu__items {
@@ -637,10 +638,6 @@ section + section {
 
   .header__bottom--active {
     height: calc(100vh - 250px);
-  }
-
-  .submenu__text {
-    overflow-y: scroll;
   }
 
   .phone-wrap {
@@ -772,7 +769,7 @@ section + section {
             flex-direction: row;
     padding: 15px;
     min-width: unset;
-    overflow-x: scroll;
+    overflow-x: auto;
     border-right: unset;
   }
 
