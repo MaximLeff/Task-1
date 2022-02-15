@@ -119,6 +119,7 @@
 	&__text {
 		margin-left: 3.333rem;
 		flex: 1 1 50%;
+		overflow-y: auto;
 	}
 
 	&__items {
